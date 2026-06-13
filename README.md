@@ -85,15 +85,18 @@ Provides login, registration, and session persistence using localStorage.
 
 ### Video Statistics
 
-*Add screenshot here*
+<img width="1338" height="741" alt="image" src="https://github.com/user-attachments/assets/5fac8f9c-4367-422a-8358-b89a80ef8935" />
+
 
 ### Quality Optimizer
 
-*Add screenshot here*
+<img width="1189" height="418" alt="image" src="https://github.com/user-attachments/assets/70e5232f-892a-460e-9b30-54279c36f6a7" />
+
 
 ### Retention Analytics
 
-*Add screenshot here*
+<img width="608" height="731" alt="image" src="https://github.com/user-attachments/assets/1f8bd562-0d16-406b-8b97-18bc799dbb48" />
+
 
 ---
 
