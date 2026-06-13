@@ -80,7 +80,8 @@ Provides login, registration, and session persistence using localStorage.
 
 ### Dashboard Overview
 
-![Dashboard](./public/screenshot.png)
+<img width="1467" height="804" alt="image" src="https://github.com/user-attachments/assets/da97e6c2-2850-402c-85e4-49086c13006e" />
+
 
 ### Video Statistics
 
