@@ -75,51 +75,6 @@ Detects processing issues and provides fallback handling for corrupted video fil
 Provides login, registration, and session persistence using localStorage.
 
 ---
-## 📂 Project Structure
-text
-tubegazer/
-├── public/
-│   ├── favicon.svg
-│   └── screenshot.png          # Visual mockup/screenshot image
-├── src/
-│   ├── assets/                 # SVGs and static assets
-│   ├── components/             # Reusable UI component modules
-│   │   ├── BestTimePredictor.jsx
-│   │   ├── ChannelLinkHub.jsx
-│   │   ├── CopyrightChecker.jsx
-│   │   ├── CreatorFeed.jsx
-│   │   ├── CrossPlatformReach.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── NextVideoQueue.jsx
-│   │   ├── QualityOptimizer.jsx
-│   │   ├── RetentionSorter.jsx
-│   │   ├── Sidebar.jsx
-│   │   ├── VideoCard.jsx
-│   │   ├── VideoProcessingSafety.jsx
-│   │   ├── VideoStatsDashboard.jsx
-│   │   └── WatchHistoryUndo.jsx
-│   ├── context/                # Context Providers (Auth, Channel stats)
-│   │   ├── AuthContext.jsx
-│   │   ├── AuthProvider.jsx
-│   │   ├── ChannelContext.jsx
-│   │   └── ChannelProvider.jsx
-│   ├── data/                   # Video & Platform dataset definitions
-│   │   └── video.js
-│   ├── hooks/                  # Custom React Hooks
-│   │   ├── useFetchFeed.js
-│   │   └── useVideoSearch.js
-│   ├── pages/                  # Route level container components
-│   │   ├── Dashboard.jsx
-│   │   ├── Login.jsx
-│   │   └── VideoDetail.jsx
-│   ├── App.jsx                 # Routes config and Core Layout
-│   ├── index.css               # Main custom design system stylesheets
-│   └── main.jsx                # DOM attachment and providers initialization
-├── index.html
-├── package.json
-└── vite.config.js
-
-------
 
 ## 📸 Screenshots
 
