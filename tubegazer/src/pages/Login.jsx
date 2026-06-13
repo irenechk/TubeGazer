@@ -129,7 +129,7 @@ function Login() {
                 className="pass-toggle"
                 onClick={() => setShowPass((p) => !p)}
               >
-                {showPass ? "🙈" : "👁"}
+                {showPass ? "👁" : "🙈"}
               </button>
             </div>
           </div>
