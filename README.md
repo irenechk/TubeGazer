@@ -74,6 +74,98 @@ Detects processing issues and provides fallback handling for corrupted video fil
 
 Provides login, registration, and session persistence using localStorage.
 
+
+###🏗 Component Architecture
+
+tubegazer/
+├── public/
+│   └── assets & static files
+
+├── src/
+│
+├── main.jsx
+│   └── React root entry point
+│
+├── App.jsx
+│   └── Main application layout and routing
+│
+├── data/
+│   └── video.js
+│       └── Mock video dataset used across components
+│
+├── context/
+│   ├── AuthContext.jsx
+│   │   └── Authentication context creation
+│   │
+│   ├── AuthProvider.jsx
+│   │   └── Provides login/logout state globally
+│   │
+│   ├── ChannelContext.jsx
+│   │   └── Channel data context creation
+│   │
+│   └── ChannelProvider.jsx
+│       └── Supplies channel links and statistics
+│
+├── hooks/
+│   ├── useFetchFeed.js
+│   │   └── Fetches creator news and updates
+│   │
+│   └── useVideoSearch.js
+│       └── Handles video filtering and searching
+│
+├── pages/
+│   ├── Login.jsx
+│   │   └── User authentication page
+│   │
+│   ├── Dashboard.jsx
+│   │   └── Main creator dashboard container
+│   │
+│   └── VideoDetail.jsx
+│       └── Individual video information page
+│
+└── components/
+    ├── Navbar.jsx
+    │   └── Top navigation menu
+    │
+    ├── Sidebar.jsx
+    │   └── Dashboard side navigation
+    │
+    ├── VideoStatsDashboard.jsx
+    │   └── Displays video analytics and performance metrics
+    │
+    ├── VideoCard.jsx
+    │   └── Reusable video information card
+    │
+    ├── WatchHistoryUndo.jsx
+    │   └── Undo functionality for watch history actions
+    │
+    ├── NextVideoQueue.jsx
+    │   └── Manages upcoming video recommendations
+    │
+    ├── CopyrightChecker.jsx
+    │   └── Detects copyright issues in uploaded videos
+    │
+    ├── RetentionSorter.jsx
+    │   └── Sorts videos by viewer retention metrics
+    │
+    ├── BestTimePredictor.jsx
+    │   └── Suggests optimal upload timings
+    │
+    ├── CrossPlatformReach.jsx
+    │   └── Shows audience reach across platforms
+    │
+    ├── ChannelLinkHub.jsx
+    │   └── Displays and manages creator social links
+    │
+    ├── QualityOptimizer.jsx
+    │   └── Generates video segmentation and quality insights
+    │
+    ├── VideoProcessingSafety.jsx
+    │   └── Handles processing errors and fallback displays
+    │
+    └── CreatorFeed.jsx
+        └── Displays creator news and community updates
+
 ---
 
 ## 📸 Screenshots
