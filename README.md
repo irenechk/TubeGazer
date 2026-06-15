@@ -75,96 +75,94 @@ Detects processing issues and provides fallback handling for corrupted video fil
 Provides login, registration, and session persistence using localStorage.
 
 
-###🏗 Component Architecture
+## 🏗️ Component Architecture
 
-tubegazer/
-├── public/
-│   └── assets & static files
-
-├── src/
-│
-├── main.jsx
-│   └── React root entry point
+```text
+src/
 │
 ├── App.jsx
-│   └── Main application layout and routing
+│   └── Main application layout and component integration.
+│
+├── main.jsx
+│   └── React application entry point.
 │
 ├── data/
 │   └── video.js
-│       └── Mock video dataset used across components
+│       └── Stores mock video dataset used across the dashboard.
 │
 ├── context/
 │   ├── AuthContext.jsx
-│   │   └── Authentication context creation
+│   │   └── Creates authentication context.
 │   │
 │   ├── AuthProvider.jsx
-│   │   └── Provides login/logout state globally
+│   │   └── Provides authentication state globally.
 │   │
 │   ├── ChannelContext.jsx
-│   │   └── Channel data context creation
+│   │   └── Creates channel information context.
 │   │
 │   └── ChannelProvider.jsx
-│       └── Supplies channel links and statistics
+│       └── Supplies channel links and statistics.
 │
 ├── hooks/
 │   ├── useFetchFeed.js
-│   │   └── Fetches creator news and updates
+│   │   └── Fetches creator news and updates.
 │   │
 │   └── useVideoSearch.js
-│       └── Handles video filtering and searching
+│       └── Handles video search and filtering.
 │
 ├── pages/
-│   ├── Login.jsx
-│   │   └── User authentication page
-│   │
 │   ├── Dashboard.jsx
-│   │   └── Main creator dashboard container
+│   │   └── Main dashboard page containing all widgets.
+│   │
+│   ├── Login.jsx
+│   │   └── User authentication page.
 │   │
 │   └── VideoDetail.jsx
-│       └── Individual video information page
+│       └── Displays detailed information for a selected video.
 │
 └── components/
     ├── Navbar.jsx
-    │   └── Top navigation menu
+    │   └── Top navigation bar for dashboard navigation.
     │
     ├── Sidebar.jsx
-    │   └── Dashboard side navigation
+    │   └── Side menu for accessing dashboard sections.
     │
     ├── VideoStatsDashboard.jsx
-    │   └── Displays video analytics and performance metrics
+    │   └── Displays video analytics, views, and performance metrics.
     │
     ├── VideoCard.jsx
-    │   └── Reusable video information card
+    │   └── Reusable card component for displaying video details.
     │
     ├── WatchHistoryUndo.jsx
-    │   └── Undo functionality for watch history actions
+    │   └── Allows users to undo watch-history actions.
     │
     ├── NextVideoQueue.jsx
-    │   └── Manages upcoming video recommendations
+    │   └── Manages and reorders upcoming videos.
     │
     ├── CopyrightChecker.jsx
-    │   └── Detects copyright issues in uploaded videos
+    │   └── Checks videos for copyright-related issues.
     │
     ├── RetentionSorter.jsx
-    │   └── Sorts videos by viewer retention metrics
+    │   └── Sorts videos based on viewer retention performance.
     │
     ├── BestTimePredictor.jsx
-    │   └── Suggests optimal upload timings
+    │   └── Suggests optimal upload times for maximum engagement.
     │
     ├── CrossPlatformReach.jsx
-    │   └── Shows audience reach across platforms
+    │   └── Displays audience reach across multiple platforms.
     │
     ├── ChannelLinkHub.jsx
-    │   └── Displays and manages creator social links
+    │   └── Manages and displays creator social media links.
     │
     ├── QualityOptimizer.jsx
-    │   └── Generates video segmentation and quality insights
+    │   └── Simulates video segmentation and playback optimization.
     │
     ├── VideoProcessingSafety.jsx
-    │   └── Handles processing errors and fallback displays
+    │   └── Handles processing errors and fallback displays.
     │
     └── CreatorFeed.jsx
-        └── Displays creator news and community updates
+        └── Displays creator updates, news, and recommendations.
+```
 
 ---
 
