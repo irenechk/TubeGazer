@@ -246,7 +246,6 @@ npm run preview
 
 **Irene Koner**
 
-GitHub: https://github.com/irenechk
 
 ---
 
